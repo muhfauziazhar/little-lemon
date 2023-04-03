@@ -25,8 +25,20 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 25px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-secondary {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.btn-secondary a {
+  color: var(--main-color);
 }
 
 header img {
@@ -50,12 +62,7 @@ header img {
   font-weight: 700;
 }
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-wrapper section {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +77,7 @@ header img {
   color: var(--main-color);
 }
 
-.main-wrapper .promo .banner {
+.banner {
   color: #fff;
   background-color: var(--main-color);
   display: flex;
@@ -88,16 +95,6 @@ header img {
 
 .banner .content p {
   font-size: 1.5rem;
-}
-
-.banner .btn-book {
-  background-color: var(--second-color);
-  padding: 1rem 2rem;
-  border-radius: 50px;
-}
-
-.banner .btn-book a {
-  color: var(--main-color);
 }
 
 .main-wrapper .list-menu {
@@ -168,15 +165,14 @@ header img {
   align-items: center;
 }
 
-.footer-wrapper {
+footer {
   border-top: 1px solid var(--main-color);
-  display: flex;
-  align-items: center;
   padding-top: 1rem;
-  margin-bottom: 1rem;
+  flex-direction: row !important;
+  align-items: center;
 }
 
-.footer-wrapper img {
+footer img {
   width: 1.5rem;
   margin-right: 1rem;
 }
