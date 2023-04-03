@@ -37,6 +37,10 @@ body {
   border-radius: 50px;
 }
 
+.btn-secondary:hover {
+  background-color: sandybrown;
+}
+
 .btn-secondary a {
   color: var(--main-color);
 }
@@ -60,6 +64,10 @@ header img {
   font-family: var(--logo-font);
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.nav-wrapper .nav .nav-item a:hover {
+  color: var(--second-color);
 }
 
 section {
@@ -111,6 +119,10 @@ section {
   max-width: 20rem;
   padding: 1rem;
   border-radius: 10px;
+}
+
+.main-wrapper .list-menu article:hover {
+  transform: scale(1.05);
 }
 
 .main-wrapper .list-menu article img {
@@ -170,6 +182,7 @@ footer {
   padding-top: 1rem;
   flex-direction: row !important;
   align-items: center;
+  justify-content: space-between;
 }
 
 footer img {
